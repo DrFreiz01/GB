@@ -1345,9 +1345,6 @@ letter-spacing: 0.35px;
 
 
 .shopping__list {
-    display: flex;
-    justify-content: center;
-
 }
 
 
@@ -1362,9 +1359,7 @@ letter-spacing: -0.2px;
 }
 
 .shopping__list-cell {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
 }
 
 .shopping__list-column-1 {
@@ -1372,7 +1367,7 @@ letter-spacing: -0.2px;
 }
 
 .shopping__list-column {
-    padding: 20px 0px;
+    flex-grow: 1;
 }
 
 .drop-cart {
@@ -1506,4 +1501,58 @@ text-transform: uppercase;
 .drop-cart-produect-goto:hover {
     background-color: #4a4a4a;
     color: #ffffff;
+}
+
+.column-1 {
+    flex-grow: 5;
+}
+
+.shopping__list-column-title {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
+    color: #222222;
+font-size: 13px;
+font-weight: 700;
+line-height: 20px;
+text-transform: uppercase;
+letter-spacing: -0.2px;
+}
+
+.shopping {
+    margin-top: 90px;
+}
+
+.shopping__list-column-info {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0px;
+}
+
+.shopping__list-column-info-text-1 {
+    color: #222222;
+font-size: 13px;
+font-weight: 400;
+text-transform: uppercase;margin-top: 35px;
+    margin-top: 15px;
+}
+
+.shopping__list-column-info-text-2 {
+    color: #6f6e6e;
+font-size: 13px;
+font-weight: 300;
+line-height: 20px;
+    margin-top: 38px;
+}
+
+
+
+.shopping__list-column-img {
+    background-color: #d1d1d1;
+    background: url(img/SC-col-1.png);
+    width: 100px;
+height: 115px;
+}
+
+.shopping__list-coluemn-info {
+    border-bottom: 1px solid #eaeaea;
 }
